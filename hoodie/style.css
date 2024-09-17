@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body nav,section {
+    margin: 3rem 10rem;
+}
+.nav{
+    
+    /* margin: 3rem 10rem; */
+    display: flex;
+    justify-content: space-between;
+}
+.line-container{
+  
+    display: flex;
+    rotate: 90deg;
+    gap: 0.2rem;
+    flex-wrap: wrap;
+}
+.line-container div{
+    height: 2rem;
+    border: 2px solid teal;
+}
+
+
+/* Content Area */
+
+.content{
+    margin-top: 7rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.content-main{
+    max-width: 500px;
+    margin-top: 2rem;
+}
+.primary-heading{
+    font-size: 3rem;
+    letter-spacing: 0.5px;
+    font-family: sans-serif;
+}
+.primary-heading span{
+    color: grey;
+}
+
+.content-para{
+    max-width: 450px;
+    margin: 2rem 0rem;
+}
+.para{
+    color: rgb(72, 69, 69);
+    letter-spacing: 0.5px;
+}
+.content-btn{
+    max-width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.content-btn .btn{
+    height: 2.5rem;
+    width: 7rem;
+    cursor: pointer;
+}
+.btn1{
+    background-color: teal;
+    border: none;
+    color: #fff;
+}
+.btn2{
+    border: 2px solid teal;
+    color: teal;
+}
+
+.img-content{
+    border-radius: 100%;
+    background: url(images/oswaldo-ibanez-1NPUmTaiMeg-unsplash.jpg);
+    background-position: top;
+    background-size: cover;
+    width: 400px;
+    height: 400px;  
+}
+
+
+.content-two{
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10rem;
+}
+.content-two h1{
+    margin-top:2rem;
+}
+.img-content2{
+    border-radius: 100%;
+    background: url(./images/gesphotoss-1i9K55ni5Dk-unsplash.jpg);
+    background-size: cover;
+    width: 400px;
+    height: 400px; 
+    box-shadow: 3px 1px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Product Area */
+
+.product{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 5rem;
+}
+.heading{
+    padding: 2rem;
+}
+.product-heading{
+    font-size: 2.5rem;
+}
+.product .content-btn{
+    max-width: 700px;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.product .content-btn button{
+    padding: 1px;
+    width: 9rem;
+}
+.product-img{
+    margin-top: 3rem;
+    display: flex;
+    padding: 2rem 10rem;
+    flex-wrap: wrap;
+    gap: 5rem;
+    
+}
+.pro-img{
+    padding: 2rem;
+    height: 250px;
+    width: 200px;
+    background: rgb(217, 225, 228);
+}
+.img-container p{
+    padding: 2px;
+}
+.img-container a{
+    color: teal;
+}
+/* Client Area */
+
+.client{
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.client .primary-heading{
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.client-imgs{
+    
+    margin-top:5rem ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5rem;
+    
+}
+.client-img{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 300px;
+   
+}
+.client-img h1{
+    margin-top: 2rem;
+}
+.client-img p{
+    margin-top:1rem ;
+    text-align: center;
+}
+.client-img img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    
+}
+.client-img div{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-size: cover;
+    /* background-position: top; */
+}
+.image1{
+    background: url(./images/milan-popovic-kOnmHdLJTNI-unsplash.jpg);
+}
+.image2{
+    background: url(./images/yogendra-singh-uWs_N5Dlyiw-unsplash.jpg);
+    background-position: center;
+}
+.image3{
+    background: url(./images/joshua-rondeau-xazIYnxpS2Q-unsplash.jpg);
+    background-position: center;
+}
+
+
+/* footer Section */
+footer{
+   background-color: black;
+   color: #fff;
+    display: flex;
+    padding: 5rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer h1{
+    padding: 2rem;
+}
+footer p{
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+}
+
+@media only screen and (max-width:768px){
+    body nav,section{
+        margin: 1rem 3rem;
+    }
+    .primary-heading{
+        font-size: 2rem;
+    }
+    .img-content{
+        height: 200px;
+        width: 200px;
+    }
+    .content-main{
+        max-width: 270px;
+    }
+    .img-content2{
+        height: 200px;
+        width: 200px;
+        margin-top: 3rem;
+    }
+    .content-two{
+        padding-top: 2rem;
+        gap: 2rem;
+    }
+    .contenttwo-main{
+        max-width: 240px;
+    }
+    .content-two h1{
+        font-size: 2rem;
+    }
+    .product-heading{
+        font-size: 2rem;
+    }
+    .product-img{
+        padding: 2rem;
+    }
+    .client-img img{
+        height: 100px;
+        width: 100px;
+    }
+    
+}
